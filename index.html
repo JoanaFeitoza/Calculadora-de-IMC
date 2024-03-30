@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="people">
+            <img src="imagens/academia.png" alt="">
+        </div>
+
+        <div class="calc">
+            <h1>Calculadora-IMC</h1>
+
+            <span class="text">Peso em Kg</span> 
+            <input type="number" name="peso" id="peso"> <br>
+
+            <span class="text">Altura em Metros</span>
+            <input type="number" name="altura" id="altura">
+
+            <input type="button" value="Calcular" class="bot" onclick="calcular()" id="but">
+
+            <div class="resultado">
+                <span class="text" id="imc">Seu imc:</span> <span class="imc"></span> <br> <br>
+                <span class="text" >Resultado:</span> <span id="resultado"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
